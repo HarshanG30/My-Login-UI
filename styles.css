@@ -5,16 +5,26 @@ body{
     /* flex-direction:column; */
     justify-content:center;
     align-items:center;
+    background-image:url("wallpaper.jpg");
+    background-size:cover;
+    font-family:"Luckiest Guy"
+}
+h1{
+    font-size:80px;
+    color:black;
 }
 #container{
-    box-shadow: 0px 5px 20px  black;
+    width:500px;
+    box-shadow: 0px 5px 40px 20px rgb(0, 0, 0);
     min-width:300px;
     max-width: 1000px;
     border:solid 5px black;
     border-radius:20px;
     text-align:center;
+    backdrop-filter:blur(18px);
 }
 #inputs{
+    font-size:30px;
     text-align:center;
     border:solid 5px solid;
     margin:auto;
@@ -23,7 +33,16 @@ body{
     content: "*";
 }
 input{
-    
+    border-radius:5px;
+    border-top:none;
+    border-left:none;
+    border-right:none;
+    border-bottom:none;
+    padding:5px;
+    font-family:"Luckiest Guy";
+    background-color:black;
+    color:white;
+    font-size:20px;
     text-align:center;
     margin:0px auto;
     margin-bottom:20px;
@@ -36,5 +55,14 @@ input{
 }
 button{
     margin:10px;
-
+    font-size:25px;
+    font-family:"Luckiest Guy";
+    box-shadow:0 9px black;
+    border-radius:10px;
+    margin-bottom:20px;
+    background-color:grey;
+}
+button:active{
+    box-shadow:0 2px black;
+    transform:translateY(8px);
 }
