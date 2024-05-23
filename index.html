@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harshan's Login UI Project
+    </title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section id = "login-screen">
+
+        <div id = "container">
+            <h1 id = "message1"> Sign In </h1>
+            <div id = "inputs">
+                    <input placeholder = "Username"> 
+                    <input id = "password" oninput = "asterick()" placeholder = "Password"> 
+            </div>
+            <button> Submit</button>
+        </div>
+    </section>
+    
+</body>
+</html>
+<script >
+    function asterick(){
+        let message = "";
+        let pass = document.getElementById("password")
+        pass = pass.value;
+        pass = pass.length
+        console.log(pass)
+        for(let i = 0; i < pass; i = i + 1){
+            message = message + "*";
+            
+        }
+        console.log(message)
+        pass = document.getElementById("password")
+        pass.value = message;
+    }
+
+</script>
